@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Buzzني – تواصل معنا</title>
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <meta name="description" content="تواصل مع فريق Buzzني للحصول على المساعدة أو الإجابة على استفساراتك. نحن هنا لخدمتك!" />
+  <meta name="keywords" content="Buzzني, تواصل معنا, دعم العملاء, رسائل SMS, WhatsApp Business" />
+  <meta name="author" content="Buzzني" />
+  <meta property="og:title" content="Buzzني – تواصل معنا" />
+  <meta property="og:description" content="تواصل مع فريق Buzzني للحصول على المساعدة أو الإجابة على استفساراتك. نحن هنا لخدمتك!" />
+  <meta property="og:image" content="https://yourwebsite.com/contact_banner.jpg" />
+  <meta property="og:url" content="https://yourwebsite.com/contact.html" />
+  <meta property="og:type" content="article" />
+  <link rel="canonical" href="https://yourwebsite.com/contact.html" />
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ContactPage",
+      "name": "تواصل معنا",
+      "description": "تواصل مع فريق Buzzني للحصول على المساعدة أو الإجابة على استفساراتك.",
+      "url": "https://yourwebsite.com/contact.html"
+    }
+  </script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Tajawal', 'Arial', sans-serif;
+      direction: rtl;
+      background-color: #F9FBFF;
+      scroll-behavior: smooth;
+    }
+    header {
+      background: linear-gradient(to bottom, #0095FF, #007ACC);
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+      animation: fadeIn 1s ease-in-out;
+    }
+    header img.logo {
+      height: 120px;
+      margin-bottom: 20px;
+      border-radius: 15px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+    .btn-custom {
+      background-color: #0095FF;
+      color: white;
+      border-radius: 30px;
+      padding: 10px 30px;
+      font-size: 1.1em;
+      transition: all 0.3s ease-in-out;
+    }
+    .btn-custom:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+      background-color: #007ACC;
+    }
+    .fade-in {
+      animation: fadeIn 1.2s ease-in-out;
+    }
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: translateY(20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+    #backToTop {
+      position: fixed;
+      bottom: 20px;
+      left: 20px;
+      background: #0095FF;
+      color: white;
+      border: none;
+      border-radius: 50%;
+      width: 45px;
+      height: 45px;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      z-index: 1000;
+    }
+    a {
+      text-decoration: none;
+      color: #0095FF;
+      transition: all 0.3s ease-in-out;
+    }
+    a:hover {
+      text-decoration: underline;
+      color: #007ACC;
+    }
+    .contact-form input, .contact-form textarea {
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      padding: 10px;
+      transition: all 0.3s ease-in-out;
+    }
+    .contact-form input:focus, .contact-form textarea:focus {
+      border-color: #0095FF;
+      box-shadow: 0 0 5px rgba(0, 149, 255, 0.5);
+    }
+  </style>
+</head>
+<body>
+
+<!-- شريط التنقل -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"><img src="buzzni_logo.png" alt="Buzzني" style="height: 40px;"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="index.html">الرئيسية</a></li>
+        <li class="nav-item"><a class="nav-link" href="services.html">الخدمات</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">من نحن</a></li>
+        <li class="nav-item"><a class="nav-link" href="faq.html">الأسئلة الشائعة</a></li>
+        <li class="nav-item"><a class="nav-link active" href="contact.html">تواصل معنا</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- القسم الرئيسي -->
+<header>
+  <img src="buzzni_logo.png" alt="Buzzني Logo" class="logo fade-in">
+  <h1 class="fade-in">تواصل معنا</h1>
+  <p class="lead fade-in">نحن هنا لمساعدتك والإجابة على استفساراتك.</p>
+</header>
+
+<!-- قسم النموذج -->
+<section class="py-5 bg-light">
+  <div class="container fade-in">
+    <h2 class="text-center mb-4">أرسل لنا رسالة</h2>
+    <p class="text-center lead mb-5">إذا كان لديك أي استفسار أو تحتاج إلى مساعدة، لا تتردد في التواصل معنا.</p>
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <form class="contact-form" action="submit_form.php" method="POST">
+          <!-- اسم المرسل -->
+          <div class="mb-3">
+            <label for="name" class="form-label">اسمك</label>
+            <input type="text" class="form-control" id="name" name="name" placeholder="أدخل اسمك" required>
+          </div>
+          <!-- البريد الإلكتروني -->
+          <div class="mb-3">
+            <label for="email" class="form-label">بريدك الإلكتروني</label>
+            <input type="email" class="form-control" id="email" name="email" placeholder="أدخل بريدك الإلكتروني" required>
+          </div>
+          <!-- الموضوع -->
+          <div class="mb-3">
+            <label for="subject" class="form-label">الموضوع</label>
+            <input type="text" class="form-control" id="subject" name="subject" placeholder="أدخل موضوع الرسالة" required>
+          </div>
+          <!-- الرسالة -->
+          <div class="mb-3">
+            <label for="message" class="form-label">رسالتك</label>
+            <textarea class="form-control" id="message" name="message" rows="5" placeholder="اكتب رسالتك هنا..." required></textarea>
+          </div>
+          <!-- زر الإرسال -->
+          <div class="text-center">
+            <button type="submit" class="btn btn-success rounded-pill px-5">إرسال الرسالة</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- قسم معلومات الاتصال -->
+<section class="py-5">
+  <div class="container fade-in">
+    <h2 class="text-center mb-4">معلومات الاتصال</h2>
+    <div class="row justify-content-center">
+      <div class="col-md-4 text-center">
+        <h5>العنوان</h5>
+        <p>القاهرة، مصر</p>
+      </div>
+      <div class="col-md-4 text-center">
+        <h5>البريد الإلكتروني</h5>
+        <p><a href="mailto:Hassanismail112006@gmail.com">Hassanismail112006@gmail.com</a></p>
+      </div>
+      <div class="col-md-4 text-center">
+        <h5>الهاتف</h5>
+        <p><a href="tel:+201028411612">+20 102 841 1612</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- تذييل الصفحة -->
+<footer class="bg-dark text-white text-center py-4 mt-5 fade-in">
+  <div class="container">
+    <p class="mb-1">جميع الحقوق محفوظة &copy; Buzzني 2025</p>
+    <p class="mb-0">
+      <a href="https://facebook.com" class="text-white me-2" target="_blank"><i class="fab fa-facebook"></i> فيسبوك</a>|
+      <a href="https://twitter.com" class="text-white me-2" target="_blank"><i class="fab fa-twitter"></i> تويتر</a>|
+      <a href="https://instagram.com" class="text-white" target="_blank"><i class="fab fa-instagram"></i> انستغرام</a>
+    </p>
+  </div>
+</footer>
+
+<!-- زر الرجوع للأعلى -->
+<button id="backToTop" title="الرجوع للأعلى">&#8593;</button>
+
+<script>
+  const backToTop = document.getElementById("backToTop");
+  window.onscroll = function () {
+    if (window.scrollY > 300) {
+      backToTop.style.display = "flex";
+    } else {
+      backToTop.style.display = "none";
+    }
+  };
+  backToTop.onclick = function () {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+</script>
+
+</body>
+</html>
